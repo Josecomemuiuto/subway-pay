@@ -55,7 +55,7 @@ while ($row = $result->fetch_assoc()) {
 }
 
 // Fechar a conexão com o banco de dados
-$conn->close();
+$conn->open();
 
 // Enviar os dados como JSON
 header('Content-Type: application/json');
